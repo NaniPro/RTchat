@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepBase | Register</title>
+  <link rel="icon" type="image/png" href="../media/icon.jpg">
+  <link rel="stylesheet" href="styleregister.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/ce0605f931.js" crossorigin="anonymous"></script>
+  <script type="module" src="register.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="headerTitle">RTchat</div>
+    <i class="fa-solid fa-eye-slash" id="eyeCross"></i>
+  </div>
+  <div class="headerTitle2"></div>
+
+  <div class="inputHolder">
+    <span class="loginTitle">Register</span>
+    <form id="registerForm">
+    <input type="text" name="name" placeholder="Username" class="input username" id="Username" required autocomplete="off">
+    <input type="email" name="Email" placeholder="Email" class="input email" id="email" required autocomplete="off" />
+    <span class="emailError" id="emailError"></span>
+    <div class="eyeContainer">
+      <input type="password" placeholder="Password" class="input inputEye passwordfield" id="password" />
+      <button class="eyeButton" id="passbutton">
+        <i class="fa-solid fa-eye"></i>
+      </button>
+    </div>
+    <button type="submit" class="loginButton g-recaptcha" id="loginButton" data-sitekey="6LcLh8ArAAAAANx_DqP8QhO_8v5k53J1GRygA690" data-callback='onSubmit' data-action='submit'>Register</button>
+
+    <div class="termsContainer">
+      <input type="checkbox" name="checkbox" class="checkbox" id="checkBox" />
+      <span class="tip">I agree to the <a href="../TOS/TOS.html">Terms & Conditions.</a></span>
+    </div>
+
+    <span class="tip2">Already have an account? <a href="../login.html" class="login">Login.</a></span>
+
+    </form>
+  </div>
+
+  <div class="inputHolder2"></div>
+  <div id="stars-container">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div class="shooting-star"></div>
+</body>
+
+</html>
+
+

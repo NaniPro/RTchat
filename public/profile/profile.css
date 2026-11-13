@@ -1,0 +1,209 @@
+body {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.sidepanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to bottom, #5865F2 0%, #5865F2 20%, rgb(48, 65, 221) 100%);
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px 4px 4px 0px;
+    padding: 5px;
+
+}
+
+.sidepanel-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 150px;
+    background-color: #5865F2;
+    box-shadow: 0px 6px 7px -2px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 5px;
+}
+
+
+.sidepanel-header img {
+    position: relative;
+    top: 20px;
+    height: 120px;
+    width: 120px;
+    border-radius: calc(150px/2);
+    box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidepanel-header span {
+    position: fixed;
+    font-size: 35px;
+    top: 60px;
+    padding-left: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.438);
+    font-weight: bold;
+
+}
+
+.mainPanel {
+    position: absolute;
+    background: wheat;
+    left: 310px;
+    width: calc(100% - 310px);
+    height: 100%;
+    top: 0;
+}
+
+.panelInfo {
+
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.397);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    width: 600px;
+    height: 350px;
+    top: 25%;
+    left: 100px;
+    padding: 30px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.603);
+
+}
+
+.panelInfo span {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+    text-shadow: 1px 1px 4px white;
+    margin-bottom: 10px;
+}
+
+
+.confirmPfp {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    height: 500px;
+    width: 700px;
+    background: linear-gradient(to top, #5865f298 0%, #5865f28f 5%, #404591c4 20%);
+    background-blend-mode: overlay;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px black;
+
+}
+
+
+.confirmPfp-Shadow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.733);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+
+.pfpBorder {
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    border: 5px solid rgba(0, 0, 0, 0.603);
+    overflow: hidden;
+
+}
+
+
+.confirmPfpRange {
+    position: absolute; 
+    width: 250px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.confirmPfpLabel {
+    position: absolute;
+    top: 96%;
+    left: 27%;
+    transform: translate(-50%, -95%);
+    color: white;
+    font-size: 20px;
+
+}
+
+
+.pfpCancelBtn {
+    position: absolute;
+    right: 110px;
+    bottom: 20px;
+    width: 80px;
+    height: 35px;
+    color: #161c66;
+    border: none;
+    margin-right: 5px;
+    background:rgba(168, 166, 166, 0.822);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.452);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pfpSubmitBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 80px;
+    height: 35px;
+    color: #161c66;
+    border: none;
+    background: #5865f298;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.685);
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.pfpSubmitBtn:hover {
+    transform: translateY(-1px);
+    background: #3b44a798;
+    transition: all 0.2s ease-in-out;
+
+
+}
+
+.pfpCancelBtn:hover {
+    transform: translateY(-1px);
+    background: rgba(114, 112, 112, 0.685);
+    transition: all 0.2s ease-in-out;
+
+
+}
+
+
+.pfpCircle{
+
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: calc(300px/2);
+    border: 5px solid rgba(0, 0, 0, 0.603);
+    overflow: hidden;
+
+}

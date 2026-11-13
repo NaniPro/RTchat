@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepBase | Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="profile.js" type="module" defer></script>
+</head>
+<body>
+    <div class="sidepanel">
+        <div class="sidepanel-header">
+            <img id="pfp">
+            <span class="username" id="username"></span>
+        </div>
+    </div>
+
+    <div class="mainPanel">
+        
+        <div class="panelInfo">
+            <span>UserName: <span class="uid" id="uid"></span> </span>
+            <span>Email: <span class="email" id="email" ></span></span>
+            <span>Email-Verified: <span class="emailStat" id="emailStat"></span></span>
+            <span>Phone Number: <span id="phoneNumber"></span></span>
+            <span>Uid: <span id="userUid"></span></span>
+            <span>Creation Date: <span id="createdAt"></span></span>
+            
+            <input type="file" id="profilePicture" ><span>Upload Profile Picture</span>
+        </div>
+        <div class="confirmPfp-Shadow" id="confirmPfp-Shadow">
+
+        </div>
+    </div>
+    
+    <div class="confirmPfp" id="confirmPfp">
+        <div class="pfpBorder" id="pfpBorder">
+           <div class="pfpCircle" id="pfpCircle">
+             <img alt="" class="confirmPfp-img" id="confirmPfp-img">
+           </div>
+            
+        </div>
+        <input type="range" class="confirmPfpRange" id="confirmPfpRange"  min="0" max="200" value="0">
+        <label for="confirmPfpRange" class="confirmPfpLabel">Zoom:</label>
+        <button class="pfpCancelBtn" id="pfpCancelBtn">Cancel</button>
+        <button class="pfpSubmitBtn" id="pfpSubmitBtn">Submit</button>
+    </div>
+    
+</body>
+</html>
+
+
+
+//im in  a hurry rn but try to make the pfp upload button better,
+uhhhh also look around the sc make sure it's good enough, and complete the pfp site
